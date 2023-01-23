@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>bill-split</title>
+</head>
+
+<body>
+
+    <br>
+
+    <div class="head">
+        <h1> BILL SPILL </h1>
+    </div>
+
+    <br> <br>
+
+
+    <div class="container">
+
+        <div class="left">
+            <br>
+            <p id="text_bill"> Bill </p>
+            <input type="number" class="input" id="myText" value="">
+
+            <br> <br>
+
+            <p id="left_p"> Select Tip %</p>
+
+            <div class="btns">
+                <button onclick="myFunc(5)"> <span> 5% </span> </button>
+                <button onclick="myFunc(10)"> <span> 10% </span> </button>
+                <button onclick="myFunc(15)"> <span> 15% </span> </button>
+                <button onclick="myFunc(25)"> <span> 25% </span> </button>
+                <button onclick="myFunc(50)"> <span> 50% </span> </button>
+                <button onclick="myFunc(75)"> <span> 75% </span> </button>
+            </div>
+
+            <br> <br>
+
+            <p id="people_text"> Number of People </p>
+
+            <div class="left_bottom">
+                <span> <img src="./images/Vector.png" alt="person-img"> </span> 
+                <div class="last_div">
+                    <button onclick="increment()" class="btn-1"> + </button>
+                    <div class="line-1"></div>
+                    <span id="counting">1</span>
+                    <div class="line-2"></div>
+                    <button onclick="decrement()" class="btn-2"> - </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right">
+
+            <div class="right_1_div">
+                <div>
+                    <pre class="right_p1">
+Tip Amount  <span> 
+/ person </span>
+                    </pre>
+                </div>
+                <span id="display_rText"> ₹0.00 </span>
+            </div>
+
+            <br>
+
+            <div class="right_1_div">
+                <div>
+                    <pre class="right_p1">
+Total <span> 
+/ person </span>
+                    </pre>
+                </div>
+                <span id="display_rText-2"> ₹0.00 </span>
+            </div>
+
+            <button onclick="btn()" class="button_right"> <span id="reset" class="spn"> GENERATE </span> </button>
+        </div>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
